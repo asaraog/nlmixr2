@@ -184,7 +184,7 @@ c(tcl = unname(fitBase$theta["tcl"]),
   `var(eta.cl)` = unname(fitBase$omega["eta.cl", "eta.cl"]),
   `add.sd` = unname(fitBase$theta["add.sd"]))
 #>         tcl var(eta.cl)      add.sd 
-#>  1.01230018  0.06936164  0.69523823
+#>  1.01230010  0.06936164  0.69523823
 ```
 
 ### A prior on a population parameter

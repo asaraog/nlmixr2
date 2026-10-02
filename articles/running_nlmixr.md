@@ -73,14 +73,14 @@ print(fit)
 #> ── nlmixr² FOCEi (outer: bobyqa) ──
 #> 
 #>           OBJF      AIC     BIC Log-likelihood Condition#(Cov) Condition#(Cor)
-#> FOCEi 116.8076 373.4073 393.587      -179.7037        538870.8        3771.287
+#> FOCEi 116.8076 373.4073 393.587      -179.7037        538873.5        3771.305
 #> 
 #> ── Time (sec $time): ──
 #> 
-#>            setup optimize covariance preprocess postprocess table compress
-#> elapsed 3.098932 0.260736  0.5499983      0.056       0.038  0.06    0.001
+#>            setup  optimize covariance preprocess postprocess table compress
+#> elapsed 3.217822 0.2647518  0.4927132       0.05        0.04 0.064    0.001
 #>             other
-#> elapsed 0.2863336
+#> elapsed 0.2717129
 #> 
 #> ── Population Parameters ($parFixed or $parFixedDf): ──
 #> 
@@ -181,10 +181,10 @@ print(fit2)
 #> 
 #> ── Time (sec $time): ──
 #> 
-#>            setup   optimize covariance preprocess configure  saem postprocess
-#> elapsed 0.127509 3.5476e-05  0.0190058       0.05     0.788 8.421       0.871
+#>             setup   optimize covariance preprocess configure  saem postprocess
+#> elapsed 0.1404928 2.9795e-05 0.02200456       0.05     0.845 7.879       0.923
 #>         table compress     other
-#> elapsed 0.066     0.05 0.2414497
+#> elapsed 0.071    0.049 0.2654728
 #> 
 #> ── Population Parameters ($parFixed or $parFixedDf): ──
 #> 
@@ -226,45 +226,45 @@ fitN <- nlmixr(one.compartment, theo_sd, list(pnlsTol=0.5), est="nlme")
 #>       ID1       ID2       ID3 
 #> 0.2196634 0.9922169 1.6502749 
 #>  Beginning PNLS step: ..  completed fit_nlme() step.
-#> PNLS step: RSS =  64.50938 
-#>  fixed effects: 0.3647343  1.027926  3.450634  
+#> PNLS step: RSS =  64.49993 
+#>  fixed effects: 0.3647292  1.027952  3.45063  
 #>  iterations: 3 
 #> Convergence crit. (must all become <= tolerance = 0.0001):
 #>     fixed  reStruct 
-#> 0.2337750 0.8083732 
+#> 0.2337920 0.7763722 
 #> 
 #> **Iteration 2
-#> LME step: Loglik: -179.8529, nlminb iterations: 1
+#> LME step: Loglik: -179.7021, nlminb iterations: 1
 #> reStruct  parameters:
 #>       ID1       ID2       ID3 
-#> 0.1214702 0.9646006 1.6506238 
+#> 0.1236584 0.9704155 1.6401474 
 #>  Beginning PNLS step: ..  completed fit_nlme() step.
-#> PNLS step: RSS =  64.50938 
-#>  fixed effects: 0.3647343  1.027926  3.450634  
+#> PNLS step: RSS =  64.49992 
+#>  fixed effects: 0.3647292  1.027952  3.45063  
 #>  iterations: 1 
 #> Convergence crit. (must all become <= tolerance = 0.0001):
 #>        fixed     reStruct 
-#> 0.000000e+00 2.204222e-07
+#> 0.000000e+00 8.270661e-07
 print(fitN)
 #> ── nlmixr² nlme by maximum likelihood ──
 #> 
 #>          OBJF      AIC      BIC Log-likelihood Condition#(Cov) Condition#(Cor)
-#> nlme 117.1061 373.7059 393.8855      -179.8529        15.47717               1
+#> nlme 116.8044 373.4042 393.5838      -179.7021        16.66263               1
 #> 
 #> ── Time (sec $time): ──
 #> 
-#>              setup   optimize covariance preprocess postprocess table compress
-#> elapsed 0.09665825 2.9563e-05  5.121e-06      0.054       0.013 0.061    0.006
+#>             setup  optimize covariance preprocess postprocess table compress
+#> elapsed 0.1023682 2.161e-05  4.388e-06      0.049       0.014  0.06    0.006
 #>            other
-#> elapsed 1.383307
+#> elapsed 1.382606
 #> 
 #> ── Population Parameters ($parFixed or $parFixedDf): ──
 #> 
 #>         Est.     SE %RSE Back-transformed(95%CI) BSV(CV%) Shrink(SD)%
-#> tka    0.365  0.182 49.8       1.44 (1.01, 2.06)     68.2      -2.40 
-#> tcl     1.03 0.0837 8.14       2.80 (2.37, 3.29)     27.1       6.06 
-#> tv      3.45 0.0461 1.34       31.5 (28.8, 34.5)     13.4       10.2 
-#> add.sd 0.698                               0.698                     
+#> tka    0.365  0.190 52.2      1.44 (0.992, 2.09)     67.9      -2.71 
+#> tcl     1.03 0.0849 8.26       2.80 (2.37, 3.30)     26.9       5.45 
+#> tv      3.45 0.0466 1.35       31.5 (28.8, 34.5)     13.6       11.0 
+#> add.sd 0.697                               0.697                     
 #>  
 #>   Covariance Type ($covMethod): nlme
 #>   No correlations in between subject variability (BSV) matrix
