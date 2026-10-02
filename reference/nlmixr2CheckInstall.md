@@ -24,14 +24,14 @@ nlmixr2CheckInstall()
 #> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 #> This is free software: you are free to change and redistribute it.
 #> There is NO WARRANTY, to the extent permitted by law.
-#> ✔ The package 'rxode2' is installed and seems to be up to date, version 5.1.8
+#> ✔ The package 'rxode2' is installed and seems to be up to date, version 5.1.9
 #> ✔ The package 'rxode2ll' is installed and seems to be up to date, version 2.0.18
 #> ✔ The package 'lotri' is installed and seems to be up to date, version 1.0.5
 #> ✔ The package 'nlmixr2' is installed and seems to be up to date, version 7.0.1
 #> ✔ The package 'nlmixr2est' is installed and seems to be up to date, version 7.1.0
 #> ✔ The package 'nlmixr2data' is installed and seems to be up to date, version 2.0.10
 #> ✔ The package 'nlmixr2extra' is installed and seems to be up to date, version 5.2.1
-#> ✔ The package 'nlmixr2plot' is installed and seems to be up to date, version 5.2.0
+#> ✔ The package 'nlmixr2plot' is installed and seems to be up to date, version 5.2.0.9000
 #> ✔ The package 'admixr2' is installed and seems to be up to date, version 0.4.1
 #> ✔ The package 'babelmixr2' is installed and seems to be up to date, version 0.1.11.9000
 #> ✔ The package 'FME' is installed and seems to be up to date, version 1.3.6.4
